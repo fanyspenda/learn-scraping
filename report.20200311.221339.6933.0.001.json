@@ -1,0 +1,551 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200311.221339.6933.0.001.json",
+    "dumpEventTime": "2020-03-11T22:13:40Z",
+    "dumpEventTimeStamp": "1583939622204",
+    "processId": 6933,
+    "cwd": "/home/fany/Codes/simulation/scraping-selenium-typescript",
+    "commandLine": [
+      "node",
+      "/home/fany/Codes/simulation/scraping-selenium-typescript/node_modules/.bin/ts-node",
+      "-r",
+      "tsconfig-paths/register",
+      "src/index.ts"
+    ],
+    "nodejsVersion": "v12.14.1",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.14.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.0.0-37-generic",
+    "osVersion": "#40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1075,
+        "user": 6400900,
+        "nice": 34300,
+        "sys": 1554200,
+        "idle": 90230800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1118,
+        "user": 6539900,
+        "nice": 10500,
+        "sys": 1736600,
+        "idle": 89647000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1063,
+        "user": 6314500,
+        "nice": 9100,
+        "sys": 1574400,
+        "idle": 90410300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1008,
+        "user": 6289000,
+        "nice": 24300,
+        "sys": 1586900,
+        "idle": 89953000,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "5c:93:a2:d8:03:64",
+        "address": "192.168.1.17",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "5c:93:a2:d8:03:64",
+        "address": "fe80::d5f5:689c:b108:b8de",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "alkanahalida-X455LD"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b05ba5",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x00000000009dbd93",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b3b18e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b3b509",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000ce68a5",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000ce6f36",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]"
+    },
+    {
+      "pc": "0x0000000000cf2dca",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf3cd5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf66e8",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000cbd017",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [node]"
+    },
+    {
+      "pc": "0x0000000000ff307b",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x0000000001376259",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2013556736,
+    "totalCommittedMemory": 2012153952,
+    "usedMemory": 2007041536,
+    "availableMemory": 46349672,
+    "memoryLimit": 2056257536,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 3145728,
+        "committedMemory": 2324704,
+        "capacity": 1571232,
+        "used": 913088,
+        "available": 658144
+      },
+      "old_space": {
+        "memorySize": 1963044864,
+        "committedMemory": 1962876888,
+        "capacity": 1960923224,
+        "used": 1959733304,
+        "available": 1189920
+      },
+      "code_space": {
+        "memorySize": 950272,
+        "committedMemory": 775648,
+        "capacity": 704352,
+        "used": 704352,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1305232,
+        "capacity": 918400,
+        "used": 918400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 44789760,
+        "committedMemory": 44789760,
+        "capacity": 44736544,
+        "used": 44736544,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1571232,
+        "used": 0,
+        "available": 1571232
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 85.6261,
+    "kernelCpuSeconds": 2.6336,
+    "cpuConsumptionPercent": 94.9029,
+    "maxRss": 2100043776,
+    "pageFaults": {
+      "IORequired": 144,
+      "IONotRequired": 612312
+    },
+    "fsActivity": {
+      "reads": 31496,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 26.9893,
+    "kernelCpuSeconds": 0.835757,
+    "cpuConsumptionPercent": 29.9194,
+    "fsActivity": {
+      "reads": 29280,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "KDE_FULL_SESSION": "true",
+    "PROFILEHOME": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "LANGUAGE": "en_US:en",
+    "LC_TIME": "id_ID.UTF-8",
+    "PAM_KWALLET5_LOGIN": "/run/user/1000/kwallet5.socket",
+    "USER": "fany",
+    "npm_config_user_agent": "npm/6.13.4 node/v12.14.1 linux x64",
+    "npm_config_always_auth": "",
+    "XDG_SEAT": "seat0",
+    "npm_package_dependencies__types_cors": "^2.8.6",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "SSH_AGENT_PID": "1190",
+    "XDG_SESSION_TYPE": "x11",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "",
+    "npm_node_execpath": "/usr/local/bin/node",
+    "KONSOLE_VERSION": "190803",
+    "SHLVL": "1",
+    "XCURSOR_SIZE": "24",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "HOME": "/home/fany",
+    "OLDPWD": "/home/fany",
+    "LESS": "-R",
+    "npm_package_dependencies__types_mongoose": "^5.7.0",
+    "npm_package_dependencies_ts_mongoose": "0.0.21",
+    "npm_config_force": "",
+    "DESKTOP_SESSION": "/usr/share/xsessions/plasma",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "ZSH": "/home/fany/.oh-my-zsh",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "GTK_RC_FILES": "/etc/gtk/gtkrc:/home/fany/.gtkrc:/home/fany/.config/gtkrc",
+    "KDE_SESSION_VERSION": "5",
+    "SHELL_SESSION_ID": "1b5aeed4b3564225a0e9cd563c156fc3",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "PAGER": "less",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "KONSOLE_DBUS_SESSION": "/Sessions/1",
+    "LC_MONETARY": "id_ID.UTF-8",
+    "npm_package_dependencies_ts_node_dev": "^1.0.0-pre.44",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/fany/.npmrc",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-s9XdtHav40,guid=af3b60e0d395b31f6e27442a5e68d917",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "COLORTERM": "truecolor",
+    "npm_package_description": "",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "npm_package_dependencies__types_selenium_webdriver": "^4.0.6",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "true",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "MANDATORY_PATH": "/usr/share/gconf//usr/share/xsessions/plasma.mandatory.path",
+    "npm_package_scripts_dev": "nodemon -r tsconfig-paths/register src/index.ts",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "fany",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/usr/bin/zsh",
+    "QT_AUTO_SCREEN_SCALE_FACTOR": "0",
+    "WINDOWID": "0",
+    "_": "/usr/local/bin/npm",
+    "npm_package_dependencies_express": "^4.17.1",
+    "npm_config_dry_run": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_prefix": "/usr/local",
+    "COLORFGBG": "15;0",
+    "DEFAULTS_PATH": "/usr/share/gconf//usr/share/xsessions/plasma.default.path",
+    "KONSOLE_PROFILE_NAME": "Profile 1",
+    "XDG_SESSION_CLASS": "user",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "TERM": "xterm-256color",
+    "XDG_SESSION_ID": "3",
+    "npm_config_cache": "/home/fany/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "npm_package_scripts_start": "nodemon src/index.ts",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "GTK2_RC_FILES": "/etc/gtk-2.0/gtkrc:/home/fany/.gtkrc-2.0:/home/fany/.config/gtkrc-2.0",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/home/fany/Codes/simulation/scraping-selenium-typescript/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/fany/Codes/simulation/scraping-selenium-typescript/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games",
+    "SESSION_MANAGER": "local/alkanahalida-X455LD:@/tmp/.ICE-unix/1256,unix/alkanahalida-X455LD:/tmp/.ICE-unix/1256",
+    "npm_package_name": "scraping-selenium-typescript",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/usr/local/bin/node",
+    "LC_ADDRESS": "id_ID.UTF-8",
+    "XCURSOR_THEME": "breeze_cursors",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session1",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "DISPLAY": ":0",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LANG": "en_US.UTF-8",
+    "LC_TELEPHONE": "id_ID.UTF-8",
+    "XDG_CURRENT_DESKTOP": "KDE",
+    "npm_config_umask": "0002",
+    "XAUTHORITY": "/tmp/xauth-1000-_0",
+    "XDG_SESSION_DESKTOP": "KDE",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "npm_package_main": "index.ts",
+    "npm_package_dependencies__types_node": "^13.5.2",
+    "npm_package_dependencies_ts_node": "^8.6.2",
+    "npm_config_fund": "true",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_message": "%s",
+    "npm_lifecycle_script": "nodemon -r tsconfig-paths/register src/index.ts",
+    "SSH_AUTH_SOCK": "/tmp/ssh-k4ti2g62t77a/agent.1149",
+    "npm_config_ca": "",
+    "npm_config_cert": "",
+    "npm_config_global": "",
+    "npm_config_link": "",
+    "LC_NAME": "id_ID.UTF-8",
+    "SHELL": "/usr/bin/zsh",
+    "npm_package_version": "1.0.0",
+    "npm_config_access": "",
+    "npm_config_also": "",
+    "npm_config_save": "true",
+    "npm_config_unicode": "true",
+    "npm_lifecycle_event": "dev",
+    "QT_ACCESSIBILITY": "1",
+    "npm_package_dependencies_cors": "^2.8.5",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"run\",\"dev\"]}",
+    "npm_config_before": "",
+    "npm_config_long": "",
+    "npm_config_production": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "npm_package_author": "",
+    "npm_config_auth_type": "legacy",
+    "npm_config_node_version": "12.14.1",
+    "npm_config_tag": "latest",
+    "KONSOLE_DBUS_SERVICE": ":1.27",
+    "LC_MEASUREMENT": "id_ID.UTF-8",
+    "npm_package_dependencies__types_express": "^4.17.2",
+    "npm_config_git_tag_version": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_script_shell": "",
+    "npm_config_shrinkwrap": "true",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "LC_IDENTIFICATION": "id_ID.UTF-8",
+    "npm_package_license": "ISC",
+    "npm_package_dependencies_mongoose": "^5.8.10",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_save_exact": "",
+    "npm_config_strict_ssl": "true",
+    "XDG_VTNR": "1",
+    "npm_config_dev": "",
+    "npm_config_globalconfig": "/usr/local/etc/npmrc",
+    "npm_config_init_module": "/home/fany/.npm-init.js",
+    "npm_config_parseable": "",
+    "PWD": "/home/fany/Codes/simulation/scraping-selenium-typescript",
+    "npm_config_globalignorefile": "/usr/local/etc/npmignore",
+    "npm_execpath": "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-/usr/share/xsessions/plasma:/etc/xdg",
+    "XDG_DATA_DIRS": "/usr/share//usr/share/xsessions/plasma:/home/fany/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_searchstaleness": "900",
+    "LC_NUMERIC": "id_ID.UTF-8",
+    "npm_config_node_options": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "KDE_SESSION_UID": "1000",
+    "LC_PAPER": "id_ID.UTF-8",
+    "npm_package_dependencies_tsconfig_paths": "^3.9.0",
+    "npm_config_group": "1000",
+    "npm_config_init_author_email": "",
+    "npm_config_searchexclude": "",
+    "npm_package_dependencies_typescript": "^3.7.5",
+    "npm_config_git": "git",
+    "npm_config_optional": "true",
+    "npm_package_dependencies_selenium_webdriver": "^4.0.0-alpha.5",
+    "npm_config_json": "",
+    "INIT_CWD": "/home/fany/Codes/simulation/scraping-selenium-typescript"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 15022,
+      "hard": 15022
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2"
+  ]
+}

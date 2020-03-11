@@ -1,0 +1,28 @@
+{
+  "name": "scraping-selenium-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "dev": "nodemon -r tsconfig-paths/register src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/mongoose": "^5.7.0",
+    "@types/node": "^13.5.2",
+    "@types/selenium-webdriver": "^4.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.10",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "ts-mongoose": "0.0.21",
+    "ts-node": "^8.6.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.5"
+  }
+}
